@@ -12,14 +12,14 @@ readEuropresseHTML <- FunctionGenerator(function(elem, language, id) {
         # Warning: </span> can also close a <span class="DocPublicationName"> tag,
         # within which a <span style=...> tag is sometimes nested:
         # this is why we need such a convoluted regexp
-        elem$content <- gsub("<span style=[^>]*>(.*?)</span>", "\\1", elem$content)
+        elem$content <- gsub("<span (style=[^>]*|class=\"occurr?ence\")>(.*?)</span>", "\\2", elem$content)
 
         encoding <- if(Encoding(elem$content) == "unknown") character(0)
                     else Encoding(elem$content)
         tree <- htmlParse(elem$content, asText=TRUE, encoding=encoding)
 
         origin <- xmlValue(getNodeSet(tree, "//span[@class = 'DocPublicationName']")[[1]])
-        # Issue n° is sometimes included in the publication name
+        # Issue number is sometimes included in the publication name
         origin <- gsub(", no\\..*$", "", origin)
 
         dat <- sapply(getNodeSet(tree, "//span[@class = 'DocHeader']"), xmlValue)
