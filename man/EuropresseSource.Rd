@@ -42,7 +42,7 @@
 }
 \examples{
     library(tm)
-    file <- system.file("texts", "europresse_test2.html", 
+    file <- system.file("texts", "europresse_test2.html",
                         package = "tm.plugin.europresse")
     corpus <- Corpus(EuropresseSource(file))
 
@@ -53,7 +53,7 @@
     meta(corpus[[1]])
 
     \dontshow{
-    file <- system.file("texts", "europresse_test1.html", 
+    file <- system.file("texts", "europresse_test1.html",
                         package = "tm.plugin.europresse")
     corpus <- Corpus(EuropresseSource(file))
     }

@@ -1,10 +1,10 @@
-e5b7fcc41447a6a8596f6d0c2fae4bcc *DESCRIPTION
-b00a945533033e378b7cebe1449f89d1 *NAMESPACE
-4c66c534f51cc6035e67f222e895e620 *NEWS
+594b09670004f5349cccaa2c6c54c71e *DESCRIPTION
+3877e98baaf3912466588b2a2ceb63f3 *NAMESPACE
+bacc00f0267fe9a3e0c67139be56b687 *NEWS
 4d1b46a00e812a15cedc64aaeeecc2c2 *R/EuropresseSource.R
-83f4bebca76d9fef82e02bdf5b7ce23e *R/readEuropresseHTML.R
+0779011e6dd93f639f63d4efa4a2bbd0 *R/readEuropresseHTML.R
 03740da8e15e904258d725f127592f11 *inst/texts/europresse_test1.html
 139c85b9cb39a28f1d9b9e7fd5665fde *inst/texts/europresse_test2.html
-b6ff14d514ca646130160c026574a563 *man/EuropresseSource.Rd
+d4fce11c8ce277326638c86b84e8f4a0 *man/EuropresseSource.Rd
 729113c1664b48627441f78cd5a0f195 *man/readEuropresse.Rd
 0930ba145c534b0f2a159a559d7db5bb *man/tm.plugin.europresse-package.Rd
